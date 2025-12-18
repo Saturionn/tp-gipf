@@ -26,6 +26,7 @@ repositories {
 
 test {
     useJUnitPlatform()
+    finalizedBy jacocoTestReport
 }
 
 jacocoTestReport {
@@ -40,6 +41,7 @@ sonar {
   properties {
     property "sonar.projectKey", "tp-gipf"
     property "sonar.projectName", "tp-gipf"
+    property "sonar.coverage.jacoco.xmlReportPath", "${layout.buildDirectory.dir('jacocoHtml')}"
   }
 }
 
