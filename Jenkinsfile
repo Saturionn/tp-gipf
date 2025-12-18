@@ -19,7 +19,7 @@ pipeline {
       }
       stage('SonarQube'){
         steps{
-          sh './gradlew sonar -Dsonar.projectKey=tp-gipf -Dsonar.projectName='tp-gipf' -Dsonar.host.url=http://172.17.0.1:9000 -Dsonar.token=squ_6a0db0100a8efa78de09262e31721e2022272195'
+          sh './gradlew sonar -Dsonar.projectKey=tp-gipf -Dsonar.projectName='tp-gipf' -Dsonar.host.url=http://172.17.0.1:9000 -Dsonar.token=sqp_c24749618b1e0a155a699ce6df374e5168020b1c'
         }
       }
       stage('Jar'){
