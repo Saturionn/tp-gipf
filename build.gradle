@@ -28,6 +28,13 @@ test {
     useJUnitPlatform()
 }
 
+sonar {
+  properties {
+    property "sonar.projectKey", "tp-gipf"
+    property "sonar.projectName", "tp-gipf"
+  }
+}
+
 // In this section you declare the dependencies for your production and test code
 dependencies {
     implementation 'org.postgresql:postgresql:42.7.3'
