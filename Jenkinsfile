@@ -28,3 +28,5 @@ pipeline {
           archiveArtifacts artifacts: 'build/libs/*.jar'
         }
       }
+    }
+}
