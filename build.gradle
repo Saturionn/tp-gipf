@@ -28,6 +28,14 @@ test {
     useJUnitPlatform()
 }
 
+jacocoTestReport {
+    reports {
+        xml.required = true
+        csv.required = false
+        html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
+    }
+}
+
 sonar {
   properties {
     property "sonar.projectKey", "tp-gipf"
